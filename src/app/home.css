@@ -667,22 +667,20 @@
   border-color: rgba(201, 168, 76, 0.2);
 }
 
-.primeware-icon {
-  width: 72px;
-  height: 72px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, rgba(201, 168, 76, 0.1), rgba(240, 208, 112, 0.05));
-  border: 1px solid rgba(201, 168, 76, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.primeware-logo-wrapper {
+  width: 200px;
   flex-shrink: 0;
 }
 
-.primeware-icon svg {
-  width: 32px;
-  height: 32px;
-  color: var(--hf-gold);
+.primeware-logo-img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 4px 16px rgba(201, 168, 76, 0.15));
+  transition: transform var(--transition-medium);
+}
+
+.primeware-card:hover .primeware-logo-img {
+  transform: scale(1.05);
 }
 
 .primeware-info h3 {
@@ -694,6 +692,19 @@
   color: var(--hf-silver-dark);
   max-width: 600px;
   font-size: 0.95rem;
+}
+
+.primeware-badge {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.4rem 1.25rem;
+  background: linear-gradient(135deg, rgba(201, 168, 76, 0.1), rgba(240, 208, 112, 0.05));
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  border-radius: var(--btn-radius);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--hf-gold);
+  letter-spacing: 0.5px;
 }
 
 /* ── Responsive ───────────────────────────────────────────────── */

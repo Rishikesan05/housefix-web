@@ -81,7 +81,7 @@ export default function ProjectsPage() {
             </div>
           </div>
 
-          {/* Second Project Showcase */}
+          {/* Second Project Showcase - Residential Exterior */}
           <div className="project-showcase reveal" style={{ marginTop: "4rem" }}>
             <div className="project-hero">
               <img src="/projects/p05-exterior-1.jpg" alt="Modern residential project - Exterior patio view" />
@@ -129,7 +129,123 @@ export default function ProjectsPage() {
                   <img src="/projects/p05-interior-1.jpg" alt="Premium door installation and interior work" />
                 </div>
                 <div className="gallery-img">
-                  <img src="/projects/p03-1.jpg" alt="Construction progress photography" />
+                  <img src="/projects/p05-interior-2.jpg" alt="Home theater installation" />
+                </div>
+                <div className="gallery-img">
+                  <img src="/projects/p05-bannister.jpg" alt="Custom bannister and railing work" />
+                </div>
+                <div className="gallery-img">
+                  <img src="/projects/p05-cinema.jpg" alt="Cinema room setup and finishing" />
+                </div>
+                <div className="gallery-img">
+                  <img src="/projects/p05-doormat.jpg" alt="Entrance and doormat detail" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Third Project Showcase - Structural Engineering */}
+          <div className="project-showcase reveal" style={{ marginTop: "4rem" }}>
+            <div className="project-hero">
+              <img src="/projects/p01-structure-1.jpg" alt="Steel structure roofing framework" />
+              <div className="project-hero-overlay">
+                <div>
+                  <h2 className="project-title">Steel Structure Project</h2>
+                  <div className="project-location">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="18" height="18"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Northern Province
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="project-details">
+              <div className="project-description">
+                <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", color: "var(--hf-white)" }}>Project Overview</h3>
+                <p>
+                  A large-scale structural engineering project featuring custom steel 
+                  framework, professional roofing systems, and bannister installations. 
+                  This project demonstrates our expertise in heavy structural work, 
+                  precision welding, and load-bearing design for both residential and 
+                  commercial applications.
+                </p>
+              </div>
+              <div className="project-meta-grid">
+                <div className="meta-item">
+                  <span className="meta-label">Services Provided</span>
+                  <span className="meta-value">Structural Engineering & Construction</span>
+                </div>
+                <div className="meta-item">
+                  <span className="meta-label">Status</span>
+                  <span className="meta-value" style={{ color: "var(--hf-success)" }}>Completed</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="project-gallery">
+              <h3>Construction Gallery</h3>
+              <div className="gallery-grid">
+                <div className="gallery-img">
+                  <img src="/projects/p01-structure-2.jpg" alt="Structural steel installation" />
+                </div>
+                <div className="gallery-img">
+                  <img src="/projects/p01-bannister.jpg" alt="Custom bannister fabrication" />
+                </div>
+                <div className="gallery-img">
+                  <img src="/projects/p05-exterior-4.jpg" alt="Thatch roofing and exterior work" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Fourth Project Showcase - Renovation Works */}
+          <div className="project-showcase reveal" style={{ marginTop: "4rem" }}>
+            <div className="project-hero">
+              <img src="/projects/p03-1.jpg" alt="Renovation project photography" />
+              <div className="project-hero-overlay">
+                <div>
+                  <h2 className="project-title">Renovation & Finishing Works</h2>
+                  <div className="project-location">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="18" height="18"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Jaffna District
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="project-details">
+              <div className="project-description">
+                <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", color: "var(--hf-white)" }}>Project Overview</h3>
+                <p>
+                  A comprehensive renovation project featuring modern upgrades to 
+                  existing structures. This project showcases our ability to transform 
+                  dated spaces into contemporary living environments through strategic 
+                  remodeling, fresh finishes, and improved spatial layouts.
+                </p>
+              </div>
+              <div className="project-meta-grid">
+                <div className="meta-item">
+                  <span className="meta-label">Services Provided</span>
+                  <span className="meta-value">Renovation & Interior Design</span>
+                </div>
+                <div className="meta-item">
+                  <span className="meta-label">Status</span>
+                  <span className="meta-value" style={{ color: "var(--hf-success)" }}>Completed</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="project-gallery">
+              <h3>Gallery</h3>
+              <div className="gallery-grid">
+                <div className="gallery-img">
+                  <img src="/projects/p03-2.jpg" alt="Renovation progress" />
+                </div>
+                <div className="gallery-img">
+                  <img src="/projects/p03-3.jpg" alt="Interior remodeling work" />
+                </div>
+                <div className="gallery-img">
+                  <img src="/projects/p03-4.jpg" alt="Finishing and paint work" />
                 </div>
               </div>
             </div>

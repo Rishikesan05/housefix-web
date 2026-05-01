@@ -35,7 +35,7 @@ export default function AboutPage() {
               </p>
               <p>
                 We don't just build walls; we engineer living spaces. Through our 
-                integrated Primeware division, we are also pioneers in bringing 
+                integrated <strong style={{ color: "var(--hf-gold)" }}>Primeware</strong> division, we are also pioneers in bringing 
                 smart home technology and digital infrastructure into modern 
                 residential construction.
               </p>
@@ -46,9 +46,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="story-image reveal-right">
-              <div style={{ background: "linear-gradient(135deg, var(--hf-navy), var(--hf-navy-dark))", width: "100%", height: "100%", display: "flex", alignItems: "center", justify: "center", minHeight: "400px" }}>
-                <img src="/logo.png" alt="HOUSEFIX.LK Brand" style={{ width: "150px", height: "auto", opacity: 0.5 }} />
-              </div>
+              <img src="/projects/p05-exterior-1.jpg" alt="Modern residential construction by HOUSEFIX.LK" style={{ width: "100%", height: "100%", objectFit: "cover", minHeight: "400px", borderRadius: "var(--card-radius)" }} />
             </div>
           </div>
         </div>
@@ -79,7 +77,7 @@ export default function AboutPage() {
             </div>
 
             {/* Placeholder for future team members */}
-            <div className="team-card reveal" style={{ opacity: 0.6 }}>
+            <div className="team-card reveal">
               <div className="team-avatar" style={{ borderStyle: "dashed" }}>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
               </div>
@@ -89,6 +87,7 @@ export default function AboutPage() {
                 We are always looking for talented architects, civil engineers, and 
                 project managers to join our growing team.
               </p>
+              <a href="https://wa.me/94765604711?text=Hi%20HOUSEFIX.LK!%20I%27m%20interested%20in%20joining%20your%20team." target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", marginTop: "1rem", padding: "0.5rem 1.5rem", background: "rgba(42, 111, 212, 0.1)", border: "1px solid rgba(42, 111, 212, 0.2)", borderRadius: "50px", fontSize: "0.85rem", fontWeight: "600", color: "var(--hf-blue-sky)" }}>Get in Touch</a>
             </div>
           </div>
         </div>

@@ -52,7 +52,7 @@ export default function Footer() {
             <Link href="/about" className="footer-link">About Us</Link>
             <Link href="/projects" className="footer-link">Our Projects</Link>
             <Link href="/contact" className="footer-link">Contact</Link>
-            <Link href="/contact" className="footer-link">Request a Quote</Link>
+            <Link href="/quote" className="footer-link">Request a Quote</Link>
           </div>
 
           {/* Contact Column */}
@@ -75,7 +75,10 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p>&copy; {currentYear} HOUSEFIX.LK (PVT) LTD. All rights reserved.</p>
-          <p>Engineered with precision in Jaffna.</p>
+          <p style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            Powered by{" "}
+            <img src="/primeware-logo.png" alt="Primeware" style={{ height: "20px", width: "auto", opacity: 0.6, verticalAlign: "middle" }} />
+          </p>
         </div>
       </div>
     </footer>

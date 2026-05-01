@@ -243,7 +243,7 @@ export default function HomePage() {
                 <img src="/projects/aarany-1.jpg" alt="Construction phase - Structural framework of Mrs. Aarany House" />
               </div>
               <div className="featured-img">
-                <img src="/projects/aarany-2.jpg" alt="Construction progress - Masonry work at Suthumalai" />
+                <img src="/projects/p01-structure-1.jpg" alt="Steel structure construction by HOUSEFIX.LK" />
               </div>
               <div className="featured-img">
                 <img src="/projects/aarany-3.jpg" alt="Finishing phase - Interior work completed" />
@@ -333,8 +333,8 @@ export default function HomePage() {
       <section className="primeware-section reveal">
         <div className="container">
           <div className="primeware-card">
-            <div className="primeware-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <div className="primeware-logo-wrapper">
+              <img src="/primeware-logo.png" alt="Primeware — Full-Stack Digital Transformation" className="primeware-logo-img" />
             </div>
             <div className="primeware-info">
               <h3><span className="text-gold-gradient">PRIMEWARE</span> — Digital Division</h3>
@@ -343,6 +343,7 @@ export default function HomePage() {
                 and IT solutions. From smart home automation to business systems —
                 Primeware bridges construction and technology for the modern age.
               </p>
+              <div className="primeware-badge">Coming Soon — primeware.lk</div>
             </div>
           </div>
         </div>

@@ -49,7 +49,7 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="service-image reveal-right">
-              <img src="/projects/aarany-1.jpg" alt="Architectural planning and structural design" />
+              <img src="/projects/p05-exterior-2.jpg" alt="Modern architectural design and stonework detailing" />
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="service-image reveal-left">
-              <img src="/projects/aarany-2.jpg" alt="Custom home construction in progress" />
+              <img src="/projects/p01-structure-1.jpg" alt="Steel structure construction framework" />
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="service-image reveal-right">
-              <img src="/projects/aarany-3.jpg" alt="Modern home renovation finishes" />
+              <img src="/projects/p05-interior-1.jpg" alt="Premium interior door installation and finishes" />
             </div>
           </div>
         </div>
@@ -130,13 +130,11 @@ export default function ServicesPage() {
                 <div className="service-list-item"><CheckIcon /> Access Control</div>
               </div>
             </div>
-            <div className="service-image reveal-left" style={{ background: "var(--hf-navy-dark)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <div className="service-image reveal-left" style={{ background: "linear-gradient(135deg, var(--hf-navy), var(--hf-navy-dark))", display: "flex", alignItems: "center", justifyContent: "center" }}>
               <div style={{ textAlign: "center", padding: "3rem" }}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="var(--hf-gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: "80px", height: "80px", marginBottom: "1.5rem" }}>
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
-                </svg>
-                <h3 style={{ color: "var(--hf-gold)", fontSize: "1.5rem", marginBottom: "0.5rem" }}>PRIMEWARE</h3>
-                <p style={{ color: "var(--hf-silver-dark)" }}>Digital Infrastructure Solutions</p>
+                <img src="/primeware-logo.png" alt="Primeware Digital Solutions" style={{ width: "160px", height: "auto", margin: "0 auto 1.5rem", filter: "drop-shadow(0 4px 16px rgba(201, 168, 76, 0.15))" }} />
+                <p style={{ color: "var(--hf-silver-dark)", fontSize: "0.9rem" }}>Digital Infrastructure Solutions</p>
+                <div style={{ marginTop: "1rem", display: "inline-block", padding: "0.35rem 1rem", background: "rgba(201, 168, 76, 0.1)", border: "1px solid rgba(201, 168, 76, 0.2)", borderRadius: "50px", fontSize: "0.75rem", fontWeight: "600", color: "var(--hf-gold)" }}>Coming Soon</div>
               </div>
             </div>
           </div>
@@ -148,7 +146,7 @@ export default function ServicesPage() {
         <div className="container reveal">
           <h2 style={{ fontSize: "2rem", marginBottom: "1rem" }}>Ready to start your project?</h2>
           <p style={{ color: "var(--hf-silver)", marginBottom: "2rem" }}>Contact us today for a free consultation and customized quote.</p>
-          <Link href="/contact" className="btn btn-primary">Request a Quote</Link>
+          <Link href="/quote" className="btn btn-primary">Request a Quote</Link>
         </div>
       </section>
     </>
