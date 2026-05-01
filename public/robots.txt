@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.housefix.lk/sitemap.xml
+
+# Disallow admin/development paths
+Disallow: /_next/
+Disallow: /api/

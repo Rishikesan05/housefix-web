@@ -1,0 +1,266 @@
+/* ============================================================
+   HOUSEFIX.LK — Get a Quote Page Styles
+   ============================================================ */
+
+.quote-header {
+  padding: 8rem 0 4rem;
+  background: linear-gradient(180deg, var(--hf-navy-dark) 0%, var(--hf-navy-deep) 100%);
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.quote-header h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.quote-header p {
+  color: var(--hf-silver);
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.quote-section {
+  padding: var(--section-pad);
+}
+
+.quote-form-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(15, 32, 51, 0.5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--card-radius);
+  padding: 3rem;
+  box-shadow: var(--shadow-card);
+}
+
+/* Steps indicator */
+.quote-steps {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.quote-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.quote-step-number {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  background: rgba(42, 111, 212, 0.1);
+  color: var(--hf-silver-dark);
+  border: 2px solid rgba(42, 111, 212, 0.15);
+  transition: all var(--transition-medium);
+  margin-bottom: 0.5rem;
+}
+
+.quote-step.active .quote-step-number {
+  background: var(--hf-blue);
+  color: var(--hf-white);
+  border-color: var(--hf-blue);
+  box-shadow: 0 0 20px rgba(42, 111, 212, 0.4);
+}
+
+.quote-step.completed .quote-step-number {
+  background: var(--hf-success);
+  color: #fff;
+  border-color: var(--hf-success);
+}
+
+.quote-step-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--hf-silver-dark);
+  text-align: center;
+  transition: color var(--transition-fast);
+}
+
+.quote-step.active .quote-step-label {
+  color: var(--hf-blue-sky);
+}
+
+.quote-step.completed .quote-step-label {
+  color: var(--hf-success);
+}
+
+/* Connector line between steps */
+.quote-step::after {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: calc(50% + 22px);
+  width: calc(100% - 44px);
+  height: 2px;
+  background: rgba(42, 111, 212, 0.15);
+  z-index: -1;
+}
+
+.quote-step:last-child::after {
+  display: none;
+}
+
+.quote-step.completed::after {
+  background: var(--hf-success);
+}
+
+/* Form Step Content */
+.quote-form-step {
+  display: none;
+}
+
+.quote-form-step.active {
+  display: block;
+  animation: fade-in-up 0.5s var(--ease-smooth);
+}
+
+.quote-form-step h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.quote-form-step > p {
+  color: var(--hf-silver);
+  margin-bottom: 2rem;
+}
+
+/* Service Selector Cards */
+.service-selector {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.service-option {
+  background: rgba(8, 15, 26, 0.6);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all var(--transition-medium);
+  text-align: center;
+}
+
+.service-option:hover {
+  border-color: rgba(42, 111, 212, 0.3);
+  background: rgba(42, 111, 212, 0.05);
+}
+
+.service-option.selected {
+  border-color: var(--hf-blue);
+  background: rgba(42, 111, 212, 0.1);
+  box-shadow: 0 0 20px rgba(42, 111, 212, 0.1);
+}
+
+.service-option-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-option h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.service-option p {
+  color: var(--hf-silver-dark);
+  font-size: 0.8rem;
+}
+
+/* Budget Range */
+.budget-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.budget-option {
+  background: rgba(8, 15, 26, 0.6);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-medium);
+}
+
+.budget-option:hover {
+  border-color: rgba(42, 111, 212, 0.3);
+}
+
+.budget-option.selected {
+  border-color: var(--hf-blue);
+  background: rgba(42, 111, 212, 0.1);
+}
+
+.budget-option h4 {
+  font-size: 0.95rem;
+  margin-bottom: 0.15rem;
+}
+
+.budget-option p {
+  font-size: 0.8rem;
+  color: var(--hf-silver-dark);
+}
+
+/* Navigation Buttons */
+.quote-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  gap: 1rem;
+}
+
+.quote-nav .btn {
+  min-width: 140px;
+}
+
+/* Or Divider */
+.quote-or-divider {
+  text-align: center;
+  margin: 3rem 0 0;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.quote-or-divider p {
+  color: var(--hf-silver-dark);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .quote-form-wrapper {
+    padding: 2rem 1.5rem;
+  }
+
+  .service-selector,
+  .budget-options {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-step-label {
+    font-size: 0.7rem;
+  }
+
+  .quote-step-number {
+    width: 36px;
+    height: 36px;
+    font-size: 0.85rem;
+  }
+}

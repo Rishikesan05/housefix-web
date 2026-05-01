@@ -1,0 +1,207 @@
+/* ============================================================
+   HOUSEFIX.LK — Projects Page Styles
+   ============================================================ */
+
+.projects-header {
+  padding: 8rem 0 4rem;
+  background: linear-gradient(180deg, var(--hf-navy-dark) 0%, var(--hf-navy-deep) 100%);
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.projects-header h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.projects-header p {
+  color: var(--hf-silver);
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.portfolio-section {
+  padding: var(--section-pad);
+}
+
+.project-showcase {
+  margin-bottom: 6rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--card-radius);
+  background: rgba(15, 32, 51, 0.3);
+  overflow: hidden;
+}
+
+.project-hero {
+  position: relative;
+  height: 50vh;
+  min-height: 400px;
+}
+
+.project-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(8, 15, 26, 0.95), transparent);
+  display: flex;
+  align-items: flex-end;
+  padding: 3rem;
+}
+
+.project-title {
+  color: var(--hf-white);
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 0.5rem;
+}
+
+.project-location {
+  color: var(--hf-blue-sky);
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-details {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+}
+
+.project-description {
+  color: var(--hf-silver);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.project-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meta-label {
+  color: var(--hf-silver-dark);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.meta-value {
+  color: var(--hf-white);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.project-gallery {
+  padding: 0 3rem 3rem;
+}
+
+.project-gallery h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.gallery-img {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  border: 1px solid var(--color-border);
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-medium);
+}
+
+.gallery-img:hover img {
+  transform: scale(1.05);
+}
+
+.upcoming-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.upcoming-card {
+  background: rgba(15, 32, 51, 0.5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--card-radius);
+  padding: 2rem;
+  text-align: center;
+}
+
+.upcoming-card-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(42, 111, 212, 0.1);
+  color: var(--hf-blue-sky);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.upcoming-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.upcoming-card p {
+  color: var(--hf-silver-dark);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 968px) {
+  .project-details {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .upcoming-projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-hero-overlay {
+    padding: 2rem;
+  }
+  .project-details {
+    padding: 2rem;
+  }
+  .project-gallery {
+    padding: 0 2rem 2rem;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
