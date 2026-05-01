@@ -303,6 +303,7 @@
   transition: all var(--transition-medium);
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 .service-card::before {
@@ -338,7 +339,7 @@
   align-items: center;
   justify-content: center;
   color: var(--hf-blue-sky);
-  margin-bottom: 1.5rem;
+  margin: 0 auto 1.5rem;
   transition: all var(--transition-medium);
 }
 
@@ -372,6 +373,7 @@
 .service-feature {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   font-size: 0.88rem;
   color: var(--hf-silver);
